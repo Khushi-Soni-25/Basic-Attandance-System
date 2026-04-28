@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Attendance</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="phone-app">
+    <section class="page active-page">
+      <div class="form-card">
+        <h2>Create Account</h2>
+        <p class="sub-text">Register your attendance account</p>
+
+        {% if error %}
+          <div class="empty">{{ error }}</div>
+        {% endif %}
+
+        <form method="POST" action="/register">
+          <label>Username</label>
+          <input type="text" name="username" required>
+
+          <label>Password</label>
+          <input type="password" name="password" required>
+
+          <label>Full Name</label>
+          <input type="text" name="full_name">
+
+          <label>Company Name</label>
+          <input type="text" name="company_name">
+
+          <button class="save-btn" type="submit">Create Account</button>
+        </form>
+
+        <p class="sub-text">
+          Already have an account? <a href="/login">Login</a>
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

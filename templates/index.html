@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Office Attendance Tracker</title>
+
+  <link rel="stylesheet" href="/static/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+  <main class="phone-app">
+
+    <header class="app-header">
+      <div>
+        <p class="welcome">Welcome back</p>
+        <h1>Attendance</h1>
+      </div>
+      <div class="profile-circle">
+        <i class="ri-user-smile-line"></i>
+      </div>
+    </header>
+
+    <section id="dashboardPage" class="page active-page">
+      <div class="hero-card">
+        <p>Today</p>
+        <h2 id="todayDate">--</h2>
+        <span id="todayStatus">No record yet</span>
+      </div>
+
+      <div class="summary-grid">
+        <div class="summary-card">
+          <i class="ri-briefcase-4-line"></i>
+          <h3 id="fullDays">0</h3>
+          <p>Present</p>
+        </div>
+
+        <div class="summary-card">
+          <i class="ri-time-line"></i>
+          <h3 id="halfLeaves">0</h3>
+          <p>Half Leaves</p>
+        </div>
+
+        <div class="summary-card">
+          <i class="ri-sun-line"></i>
+          <h3 id="holidays">0</h3>
+          <p>Holidays</p>
+        </div>
+      </div>
+
+      <div class="section-title">
+        <h2>Recent Records</h2>
+        <button onclick="changePage('recordsPage')">View All</button>
+      </div>
+
+      <div id="recentRecords" class="records-list"></div>
+    </section>
+
+    <section id="calendarPage" class="page">
+      <div class="form-card">
+        <h2>Add Attendance</h2>
+        <p class="sub-text">Save your daily office record</p>
+
+        <label>Date</label>
+        <input type="date" id="dateInput">
+
+        <label>Status</label>
+        <select id="statusInput">
+          <option value="Present">Present</option>
+          <option value="First Half Leave">First Half Leave</option>
+          <option value="Second Half Leave">Second Half Leave</option>
+          <option value="Holiday">Holiday</option>
+          <option value="Absent">Absent</option>
+        </select>
+
+        <label>Note</label>
+        <textarea id="noteInput" placeholder="Example: Reached office at 10 AM"></textarea>
+
+        <button class="save-btn" onclick="saveRecord()">
+          <i class="ri-save-3-line"></i>
+          Save Record
+        </button>
+      </div>
+
+      <div class="quick-status">
+        <button onclick="quickStatus('Present')">Present</button>
+        <button onclick="quickStatus('First Half Leave')">1st Half</button>
+        <button onclick="quickStatus('Second Half Leave')">2nd Half</button>
+        <button onclick="quickStatus('Holiday')">Holiday</button>
+        <button onclick="quickStatus('Absent')">Absent</button>
+      </div>
+    </section>
+
+    <section id="recordsPage" class="page">
+      <div class="section-title">
+        <h2>All Records</h2>
+      </div>
+
+      <div id="allRecords" class="records-list"></div>
+    </section>
+
+    <section id="profilePage" class="page">
+      <div class="profile-card">
+        <div class="big-profile">
+          <i class="ri-user-smile-line"></i>
+        </div>
+        <h2 id="profileFullName">Office Attendance Tracker</h2>
+        <p id="profileCompanyName">Personal attendance record app</p>
+      </div>
+
+      <div class="info-card">
+        <h3 id="profileUsername">Profile</h3>
+        <p>This app stores your office attendance records using your Flask backend and JSON storage.</p>
+        <button class="save-btn" onclick="window.location.href='/export-csv'">
+          <i class="ri-download-2-line"></i>
+          Export CSV
+        </button>
+        <button class="save-btn" onclick="window.location.href='/export-xml'">
+          <i class="ri-file-excel-2-line"></i>
+          Export Excel
+        </button>
+      </div>
+    </section>
+
+    <nav class="bottom-nav">
+      <button class="nav-btn active-nav" onclick="changePage('dashboardPage', this)">
+        <i class="ri-home-5-line"></i>
+        <span>Dashboard</span>
+      </button>
+
+      <button class="nav-btn" onclick="changePage('calendarPage', this)">
+        <i class="ri-calendar-check-line"></i>
+        <span>Calendar</span>
+      </button>
+
+      <button class="nav-btn" onclick="changePage('recordsPage', this)">
+        <i class="ri-list-check-3"></i>
+        <span>Records</span>
+      </button>
+
+      <button class="nav-btn" onclick="changePage('profilePage', this)">
+        <i class="ri-user-line"></i>
+        <span>Profile</span>
+      </button>
+    </nav>
+
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
