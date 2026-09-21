@@ -55,7 +55,7 @@ Basic-Attendance-System/
 ## ⚙️ Installation and Setup
 
 1. Clone the Repository
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/Khushi-Soni-25/Basic-Attandance-System.git
 2. Navigate to the Project Directory
 cd Basic-Attandance-System
 3. Create a Virtual Environment
