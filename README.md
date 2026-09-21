@@ -48,7 +48,8 @@ Basic-Attendance-System/
 │
 └── templates/
     ├── index.html
-    ├── login.
+    ├── login.html
+    └── register.html
 ```
 
 ## ⚙️ Installation and Setup
@@ -109,13 +110,3 @@ Attendance analytics and charts
 *Khushi B. Soni*
 
 B.E. Information Technology Student
-
-
-
-
-
-
-
-
-html
-    └── register.html
