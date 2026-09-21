@@ -91,7 +91,7 @@ User sessions are used for authentication.
 Attendance records are associated with individual users.
 Input validation is applied to attendance records.
 
-##🌐 Deployment
+## 🌐 Deployment
 
 The application can be deployed using Render with Gunicorn.
 
@@ -105,8 +105,8 @@ Email notifications
 Improved database management
 Attendance analytics and charts
 
-### 👩‍💻 Author
+## 👩‍💻 Author
 
-*Khushi B. Soni*
+# *Khushi B. Soni*
 
 B.E. Information Technology Student
