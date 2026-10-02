@@ -1,24 +1,4 @@
 {
-  "2026-04-28": {
-    "date": "2026-04-28",
-    "status": "Holiday",
-    "note": "Medical Emergency in Rajkot"
-  },
-  "2026-04-27": {
-    "date": "2026-04-27",
-    "status": "Absent",
-    "note": "sick leave"
-  },
-  "2026-04-25": {
-    "date": "2026-04-25",
-    "status": "Absent",
-    "note": "sick leave"
-  },
-  "2026-04-24": {
-    "date": "2026-04-24",
-    "status": "Absent",
-    "note": "sick leave"
-  },
   "2026-02-23": {
     "date": "2026-02-23",
     "status": "Present",
@@ -278,5 +258,110 @@
     "date": "2026-04-23",
     "status": "Present",
     "note": "1 hour late (reached at 11 o'clock)"
+  },
+  "2026-04-24": {
+    "date": "2026-04-24",
+    "status": "Absent",
+    "note": "sick leave"
+  },
+  "2026-04-25": {
+    "date": "2026-04-25",
+    "status": "Absent",
+    "note": "sick leave"
+  },
+  "2026-04-27": {
+    "date": "2026-04-27",
+    "status": "Absent",
+    "note": "sick leave"
+  },
+  "2026-04-28": {
+    "date": "2026-04-28",
+    "status": "Holiday",
+    "note": "Medical Emergency in Rajkot"
+  },
+  "2026-04-29": {
+    "date": "2026-04-29",
+    "status": "Present",
+    "note": ""
+  },
+  "2026-04-30": {
+    "date": "2026-04-30",
+    "status": "Present",
+    "note": ""
+  },
+  "2026-05-01": {
+    "date": "2026-05-01",
+    "status": "Present",
+    "note": ""
+  },
+  "2026-05-02": {
+    "date": "2026-05-02",
+    "status": "Present",
+    "note": ""
+  },
+  "2026-05-04": {
+    "date": "2026-05-04",
+    "status": "Present",
+    "note": ""
+  },
+  "2026-05-05": {
+    "date": "2026-05-05",
+    "status": "First Half Leave",
+    "note": "college work"
+  },
+  "2026-05-06": {
+    "date": "2026-05-06",
+    "status": "Present",
+    "note": ""
+  },
+  "2026-05-07": {
+    "date": "2026-05-07",
+    "status": "Absent",
+    "note": "personal work"
+  },
+  "2026-05-08": {
+    "date": "2026-05-08",
+    "status": "Present",
+    "note": ""
+  },
+  "2026-05-09": {
+    "date": "2026-05-09",
+    "status": "Present",
+    "note": ""
+  },
+  "2026-05-11": {
+    "date": "2026-05-11",
+    "status": "Present",
+    "note": ""
+  },
+  "2026-05-12": {
+    "date": "2026-05-12",
+    "status": "Second Half Leave",
+    "note": "college work"
+  },
+  "2026-05-13": {
+    "date": "2026-05-13",
+    "status": "Present",
+    "note": ""
+  },
+  "2026-05-14": {
+    "date": "2026-05-14",
+    "status": "Present",
+    "note": ""
+  },
+  "2026-05-15": {
+    "date": "2026-05-15",
+    "status": "Absent",
+    "note": "personal work"
+  },
+  "2026-05-16": {
+    "date": "2026-05-16",
+    "status": "Present",
+    "note": ""
+  },
+  "2026-05-18": {
+    "date": "2026-05-18",
+    "status": "Present",
+    "note": ""
   }
 }
